@@ -19,13 +19,13 @@ kind create cluster --config kind.yml
 
 ### 2. Apply Deployment Configuration
 
-```bash
+
 kubectl create deployment example-deployment --image=nginx:latest --replicas=3
 kubectl expose deployment example-deployment --port=80 --target-port=80 --name=example-service --type=LoadBalancer
 
 ### useful kubectl commands
 
-```bash
+
 # Get all resources
 kubectl get all
 
